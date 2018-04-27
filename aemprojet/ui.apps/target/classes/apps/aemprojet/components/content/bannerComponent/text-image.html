@@ -1,0 +1,43 @@
+
+<div data-sly-test="${properties.position=='left'}">
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="image-pos">
+				<img src="${properties.bannerimage}" class="img-rounded" />
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="text-pos">
+				<p>
+					<font size="${properties.fontsize}">${properties.heading}</font>
+				</p>
+				<p>${properties.description}</p>
+				<input type="button" class="btn btn-info"
+					value="${properties.buttontext}"
+					onclick="location.href = '${properties.hreflink @ context='html'}';">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div data-sly-test="${properties.position=='right'}">
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="text-pos">
+				<p>
+					<font size="${properties.fontsize}">${properties.heading}</font>
+				</p>
+				<p>${properties.description}</p>
+				<input type="button" class="btn btn-info"
+					value="${properties.buttontext}"
+					onclick="location.href = '${properties.hreflink @ context='html'}';">
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="image-pos">
+				<img src="${properties.bannerimage}" class="img-rounded" />
+			</div>
+		</div>
+	</div>
+</div>

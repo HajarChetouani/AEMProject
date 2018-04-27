@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.aem.aemprojet.core.utils.ModeUtil">
+        <implementation class="com.aem.aemprojet.core.utils.ModeUtil"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.aem.aemprojet.core.utils.ModeUtil"/>
+    </scr:component>
+</components>

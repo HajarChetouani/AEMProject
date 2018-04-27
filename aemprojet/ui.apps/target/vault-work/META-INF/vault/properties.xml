@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>aemprojet - UI apps</comment>
+<entry key="createdBy">user</entry>
+<entry key="name">aemprojet.ui.apps</entry>
+<entry key="created">2018-04-27T10:55:51.748+0100</entry>
+<entry key="groupId">com.aem</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">aemprojet Content Package</entry>
+<entry key="description">UI apps package for aemprojet</entry>
+<entry key="artifactId">aemprojet.ui.apps</entry>
+<entry key="path">/etc/packages/aemprojet Content Package/aemprojet.ui.apps.zip</entry>
+</properties>

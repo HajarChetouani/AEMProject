@@ -1,0 +1,20 @@
+<!--<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='bannerComponent'}"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div data-sly-test="${(wcmmode.edit || wcmmode.design) && !properties.backcolor}"
+     class="cq-placeholder" data-emptytext="Contribute Banner">
+</div>
+<div class="container-fluid">
+    <div data-sly-test="${properties.bgstyle=='color'}">
+        <div class="jumbotron" style="background-color:${properties.backcolor @ context='styleToken'};">
+                 <sly data-sly-include="text-image.html" />
+        </div>
+    </div>
+  
+    <div data-sly-test="${properties.bgstyle=='image'}">
+        <div class="jumbotron" style="background-image:url('${properties.backimage @ context='styleString'}');">
+                 <sly data-sly-include="text-image.html" />
+        </div>
+    </div>
+</div>

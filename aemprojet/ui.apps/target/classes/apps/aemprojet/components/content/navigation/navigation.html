@@ -1,0 +1,59 @@
+<style>
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<div data-sly-use.navigation="com.aem.aemprojet.core.models.Navigation" class="container we-Container--top-navbar">
+    <nav class="navbar navbar-inverse navbar-absolute-top">
+
+        <!-- /.navbar-header -->
+        <div class="collapse navbar-collapse width" id="we-example-navbar-collapse-inverse">
+            <ul  class="nav navbar-nav navbar-center" >
+                <li class="visible-xs"><a href="${navigation.root.path}.html"><strong class="text-primary">Home </strong></a></li>
+
+                <!-- /* Nav with business logic */ -->
+                <li  class="dropdown" data-sly-repeat="${navigation.items}">
+                    <a class="dropbtn" href="${item.path}.html">${item.title}</a>
+                    <ul class="dropdown-content"  data-sly-list.child="${item.listChildren}"> 
+                    <li data-sly-unwrap>
+                    <a href="${child.path}.html">${child.title}</a>
+                    </li>
+                    </ul>
+                    </li>
+                   </ul>
+                   
+          
+            
+        </div>
+    </nav>
+</div>
