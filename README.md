@@ -3,12 +3,12 @@
 
 #The Project is Creation of an Archetype Maven with the most used features for example:
 
-The Components = Breadcrumb, Navigation, Banner, Grid System 
+  ➤ The Components = Breadcrumb, Navigation, Banner, Grid System 
 
-Dialog components = Asset picker, Grid select 
+  ➤ Dialog components = Asset picker, Grid select 
 
-Class Utils = for managing pages and nodes 
+  ➤ Class Utils = for managing pages and nodes  
 
-Servlets = For downloading assets 
+  ➤ Servlets = For downloading assets 
 
-Adapters =PageAdapters, FolderAdapters 
+  ➤Adapters =PageAdapters, FolderAdapters 
